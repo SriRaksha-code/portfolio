@@ -2,26 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sri Raksha k N | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">SR</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">&#9776;</div>
-  </nav>
-  <section class="hero">
-  <h1>Welcome to My Portfolio</h1>
-  <p>This is a simple and responsive navbar demo.</p>
-  <a href="#" class="cta-button">Explore Now</a>
+
+  
+  <header>
+    <div class="container">
+      <h1>Sri Raksha K N</h1>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="toggle" onclick="toggleMenu()">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>Sri Raksha</strong>, a passionate and motivated web developer with a Bachelor's degree in Computer Applications (BCA). I love bringing ideas to life through clean, responsive, and user-friendly web interfaces. My core skills include AWS, HTML, CSS, JavaScript, and I'm also exploring DevOps tools like Docker, Linux, and Terraform.
+    </p>
+    <p>
+      I enjoy learning by building real projects — from responsive navigation bars to interactive calculators — and constantly improving my skills through internships, online learning.
+    </p>
+    <p>
+      I’m excited to grow as a full-stack or DevOps engineer and contribute to real-world projects that solve meaningful problems. Let’s build something amazing!
+    </p>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Responsive Navbar</h3>
+          <p>A responsive navbar with hamburger menu for mobile screens.</p>
+        </div>
+        <div class="project-card">
+          <h3>CI/CD Pipeline for TODO App</h3>
+          <p>Automated software build and deployment from GitHub -> Jenkins -> ArgoCD -> Kubernetes cluster.</p>
+        </div>
+        
+      </div>
+    </div>
   </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: rakshavashistha07@gmail.com</p>
+      <p>LinkedIn: <a href="#">https://www.linkedin.com/in/sri-raksha-k-n-90765425a</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Sri Raksha. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
